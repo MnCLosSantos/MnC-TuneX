@@ -31,8 +31,6 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 - Supports translations via config file.
 - Uses OXLIB for notifications and progress bars.
 
-### Download BETA from https://github.com/MnCLosSantos/TuneX_PlugIN
-
 ## Prerequisites
 
 - QB-Core 
