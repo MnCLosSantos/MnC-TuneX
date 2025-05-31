@@ -42,6 +42,6 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 
 2) add images qb-inventory/html/images
 
-3) ensure MNC_TuneX_PlugIN in server.cfg
+3) ensure TuneX_PlugIN in server.cfg
 
 4) Restart your server
