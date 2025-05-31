@@ -3,18 +3,26 @@ Config = {}
 Config.Locale = 'en'
 Config.RequiredItem = "tunerlaptop" -- Tuner Laptop Item Name
 Config.Item = 'tunerchip'           -- Tuner Chip Item Name
-Config.UsePlateChangeCommand = false -- true or false
+Config.UsePlateChangeCommand = true -- true or false
 Config.PlateBlacklist = {"faggot", "nigger", "queer", "kkk", "nazi", "eulen"} -- add more as you please
 Config.SpeedModifiers = {
-    ['0'] = 10.0,   -- Compacts
-    ['1'] = 20.0,   -- Sedans
-    ['2'] = 30.0,   -- SUVs
-    ['3'] = 40.0,   -- Coupes
-    ['4'] = 50.0,   -- Muscle
-    ['5'] = 60.0,   -- Sports Classics
-    ['6'] = 70.0,   -- Sports
-    ['7'] = 80.0,   -- Super
-	['18'] = 50.0,  -- Emergency        add more classes as you please
+    ['0'] = 10.0,    -- Compacts
+    ['1'] = 20.0,    -- Sedans
+    ['2'] = 30.0,    -- SUVs
+    ['3'] = 40.0,    -- Coupes
+    ['4'] = 50.0,    -- Muscle
+    ['5'] = 60.0,    -- Sports Classics
+    ['6'] = 70.0,    -- Sports
+    ['7'] = 80.0,    -- Super
+    ['8'] = 10.0,    -- Motorcycles
+    ['9'] = 30.0,    -- Off Road
+    ['10'] = 30.0,   -- Industrial
+    ['11'] = 30.0,   -- Utility
+    ['12'] = 30.0,   -- Vans
+    ['17'] = 20.0,   -- Service
+    ['18'] = 50.0,   -- Emergency
+    ['20'] = 20.0,   -- Commercial
+    ['22'] = 20.0,   -- Openwheel
 }
 
 
