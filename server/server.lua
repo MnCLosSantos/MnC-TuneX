@@ -31,9 +31,9 @@ RegisterCommand('jobtune', function(source, args, rawCommand)
 
     local jobName = Player.PlayerData.job.name
     local allowedJobs = {
+        bcso = true,
         police = true,
-        ambulance = true,
-        trackmarshall = true
+        ambulance = true
     }
 
     if not allowedJobs[jobName] then
