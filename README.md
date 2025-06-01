@@ -22,14 +22,16 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 ## Features
 
 - Enhance vehicle speed and overall performance with the TuneX PlugIN.
-- Command "jobtune" for these jobs "police, ambulance, trackmarshall" allowed jobs can be config'd in  and class 18 only
-- Command tuning handeled seperate from item tuning
-- Required item "tunerlaptop"
-- OBD Connecter item "tunerchip"
+- Command "jobtune" for these jobs "police, ambulance, trackmarshall" allowed jobs can be config'd in server/server.lua on line 61.
+- Command is locked to class 18 only to avoid misuse.
+- Command tuning handeled seperate from item tuning.
+- Required item "tunerdrive".
+- OBD Connecter item "tunerchip".
+- TuneX R69 item "tunerlaptop".
 - Hightly configurable
-- Change plate command "disabled in config"
+- Change plate command "disabled in config" (wip)
 - Compatible QB-Core only.
-- Supports translations some via config file and other files.
+- Supports some translations via config file and other files.
 - Uses OXLIB for notifications and progress bars.
 - Custom nui for the tunerlaptop item
 - Failsafes to ensure no double tuning
