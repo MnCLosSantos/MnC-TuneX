@@ -1,27 +1,36 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-    -- MNC edits below
+-- Handle tunerchip usage
 QBCore.Functions.CreateUseableItem("tunerchip", function(source, item)
+    TriggerClientEvent("zaps:useTunerChip", source)
+end)
+
+-- Handle tunerlaptop (must be used after tunerchip)
+QBCore.Functions.CreateUseableItem("tunerlaptop", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
 
-    -- Check if player has the required tool item
-    local laptop = Player.Functions.GetItemByName("tunerlaptop")
-
+    local laptop = Player.Functions.GetItemByName("tunerdrive")
     if laptop and laptop.amount > 0 then
-        -- ✅ Player has the tuner laptop, allow using the tuner chip
         TriggerClientEvent("zaps:useChip", source)
     else
-        -- ❌ Missing required tool
         TriggerClientEvent('ox_lib:notify', source, {
             title = "Missing Tool",
-            description = "You need a Tuner Laptop to use the TuneX plugin.",
+            description = "You need a TuneX Tunes Database to start tuning.",
             type = "error"
         })
     end
 end)
 
--- Register the '/jobtunerchip' command with class 18 check
+-- Remove tunerchip from inventory
+RegisterNetEvent("zaps:removeTunerChip", function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if not Player then return end
+    Player.Functions.RemoveItem("tunerchip", 1)
+end)
+
+-- Job-based tuning (fully independent from item flow)
 RegisterCommand('jobtune', function(source, args, rawCommand)
     if source == 0 then return end
 
@@ -29,14 +38,8 @@ RegisterCommand('jobtune', function(source, args, rawCommand)
     local Player = QBCore.Functions.GetPlayer(src)
     if not Player then return end
 
-    local jobName = Player.PlayerData.job.name
-    local allowedJobs = {
-        police = true,
-        ambulance = true,
-        trackmarshall = true
-    }
-
-    if not allowedJobs[jobName] then
+    local job = Player.PlayerData.job.name
+    if not (job == "police" or job == "ambulance" or job == "trackmarshall") then
         TriggerClientEvent('ox_lib:notify', src, {
             title = "Wrong Job",
             description = "You need to be an emergency service to use the TuneX plugin command.",
@@ -46,7 +49,6 @@ RegisterCommand('jobtune', function(source, args, rawCommand)
         return
     end
 
-    -- Inform user of the two-step process
     TriggerClientEvent('ox_lib:notify', src, {
         title = "TuneX",
         description = "The jobtune command needs to be used twice to work, check your HUD for visual cues.",
@@ -54,7 +56,5 @@ RegisterCommand('jobtune', function(source, args, rawCommand)
         duration = 7000
     })
 
-    -- Check vehicle class on client-side to avoid misuse
     TriggerClientEvent('zaps:jobTunerAttempt', src)
 end, false)
-
