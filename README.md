@@ -25,9 +25,9 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 - Command "jobtune" for these jobs "police, ambulance, trackmarshall" allowed jobs can be config'd in server/server.lua on line 61.
 - Command is locked to class 18 only to avoid misuse.
 - Command tuning handeled seperate from item tuning.
-- Required item "tunerdrive".
-- OBD Connecter item "tunerchip".
+- TuneX Database item "tunerdrive".
 - TuneX R69 item "tunerlaptop".
+- TuneX OBD item "tunerchip".
 - Hightly configurable
 - Change plate command "disabled in config" (wip)
 - Compatible QB-Core only.
