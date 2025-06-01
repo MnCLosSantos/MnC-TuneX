@@ -1,9 +1,9 @@
 Config = {}
 
 Config.Locale = 'en'
-Config.RequiredItem = "tunerlaptop" -- Tuner Laptop Item Name
-Config.Item = 'tunerchip'           -- Tuner Chip Item Name
-Config.UsePlateChangeCommand = true -- true or false
+Config.RequiredItem = "tunerdrive"    -- Tuner Laptop Item Name
+Config.Item = 'tunerlaptop'          -- Tuner Chip Item Name
+Config.UsePlateChangeCommand = false  -- true or false
 Config.PlateBlacklist = {"faggot", "nigger", "queer", "kkk", "nazi", "eulen"} -- add more as you please
 Config.SpeedModifiers = {
     ['0'] = 10.0,    -- Compacts
