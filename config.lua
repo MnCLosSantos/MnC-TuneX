@@ -14,14 +14,14 @@ Config.SpeedModifiers = {
     ['5'] = 60.0,    -- Sports Classics
     ['6'] = 70.0,    -- Sports
     ['7'] = 80.0,    -- Super
-    ['8'] = 10.0,    -- Motorcycles
+	['8'] = 10.0,    -- Motorcycles
     ['9'] = 30.0,    -- Off Road
     ['10'] = 30.0,   -- Industrial
     ['11'] = 30.0,   -- Utility
     ['12'] = 30.0,   -- Vans
-    ['17'] = 20.0,   -- Service
-    ['18'] = 50.0,   -- Emergency
-    ['20'] = 20.0,   -- Commercial
+	['17'] = 20.0,   -- Service
+	['18'] = 50.0,   -- Emergency
+	['20'] = 20.0,   -- Commercial
     ['22'] = 20.0,   -- Openwheel
 }
 
