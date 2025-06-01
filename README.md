@@ -23,6 +23,7 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 
 - Enhance vehicle speed and overall performance with the TuneX PlugIN.
 - Command "jobtune" for these jobs "police, ambulance, bcso" and class 18 only
+- Command tuning handeled seperate from item tuning
 - Required item "tunerlaptop"
 - OBD Connecter item "tunerchip"
 - Hightly configurable
@@ -30,8 +31,8 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 - Compatible QB-Core only.
 - Supports translations via config file.
 - Uses OXLIB for notifications and progress bars.
-- custom nui for the tunerlaptop item
-- failsafes to ensure no double tuning
+- Custom nui for the tunerlaptop item
+- Failsafes to ensure no double tuning
 
 ## Prerequisites
 
