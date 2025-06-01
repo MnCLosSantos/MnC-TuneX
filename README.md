@@ -30,6 +30,8 @@ The new version is now relying on QB-Core and not standalone or esx compatible.
 - Compatible QB-Core only.
 - Supports translations via config file.
 - Uses OXLIB for notifications and progress bars.
+- custom nui for the tunerlaptop item
+- failsafes to ensure no double tuning
 
 ## Prerequisites
 
