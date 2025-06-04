@@ -151,7 +151,7 @@ RegisterNUICallback('uploadTune', function(_, cb)
     -- Ask server if player has 'tunerdrive2' item
     QBCore.Functions.TriggerCallback('zaps:hasItemInInventory', function(hasItem)
         if not hasItem then
-            lib.notify({title = 'TuneX', description = 'You need a TunerDrive2 item in your inventory to upload.', type = 'error'})
+            lib.notify({title = 'TuneX', description = 'You need a Decrypted Drive in your inventory to upload a tune.', type = 'error'})
             cb({})
             return
         end
