@@ -21,6 +21,8 @@ to start tuning your vehicle you need 3 things a TuneX R69, TuneX OBD PlugIN and
 - Command "admintune" for admin groups.
 - Command is locked to class 18 only to avoid misuse. (jobtune)
 - Command tuning handeled seperate from item tuning.
+- Command autodrive/stopautodrive is admin locked
+- TuneX AutoDrive item "autodrivekit"
 - TuneX Drive item "tunerdrive".
 - TuneX R69 item "tunerlaptop".
 - TuneX OBD item "tunerchip".
