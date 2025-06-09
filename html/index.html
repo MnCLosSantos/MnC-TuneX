@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TuneX R69 Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="display: none;">
+  <div class="container">
+
+    <!-- Main UI Page -->
+    <div id="mainPage" class="page">
+      <div class="top-left-buttons" style="display: flex; flex-direction: column; gap: 10px;">
+        <button class="settings-btn" id="settingsBtn" title="Settings">⚙️</button>
+        <button class="settings-btn" id="vehicleAssistBtn" title="Vehicle Assist Settings" style="font-size: 20px; display: flex; align-items: center; justify-content: center;">
+          ⚙️
+        </button>
+      </div>
+      <div class="top-right-buttons">
+        <button class="exit-btn" id="closeBtn">Exit</button>
+      </div>
+
+      <h1 class="main-title">TuneX R69 Interface</h1>
+      <p class="main-info centered-info">
+        Welcome to the TuneX R69 Interface here you can manage applying tunes via your TuneX OBD PlugIN, decrypting files via your TuneX Tunes Database and removing your TuneX devices. Make sure to remove your devices as they may be seized.
+      </p>
+
+      <div class="button-group-bottom">
+        <button id="uploadBtn" class="green-btn">
+          <span class="btn-icon" id="uploadIcon">⬆️</span> Upload TuneX File
+        </button>
+        <button id="disconnectBtn" class="red-btn">
+          <span class="btn-icon" id="disconnectIcon">🔌</span> Disconnect OBD PlugIN
+        </button>
+      </div>
+    </div>
+
+    <!-- Decryption Settings UI Page -->
+    <div id="settingsPage" class="page" style="display: none;">
+      <div class="top-left-buttons">
+        <button class="exit-btn" id="backBtn">Back</button>
+      </div>
+      <div class="top-right-buttons">
+        <button class="exit-btn" id="nextToAutoDriveBtn">Next</button>
+      </div>
+
+      <h1 class="settings-title">Decryption Settings</h1>
+      <p class="settings-info">
+        Files must be decrypted to tune a vehicle, Encrypted files are not recognised by the ecu or plug in you must decrypt them before trying to tune your vehicle, do that here. Be aware it is illegal to tune your vehicles ecu without declaring to your insurance provider.
+      </p>
+
+      <div class="button-group-bottom">
+        <button id="customSettingsBtn" class="green-btn">
+          <span class="btn-icon" id="decryptIcon">🗃️</span> Start Decrypting Files
+        </button>
+        <button id="disconnectEncryptedBtn" class="red-btn">
+          <span class="btn-icon" id="disconnectEncryptedIcon">❌</span> Disconnect Encrypted Drive
+        </button>
+      </div>
+    </div>
+
+    <!-- AutoDrive Settings UI Page -->
+    <div id="autoDrivePage" class="page" style="display: none;">
+      <div class="top-left-buttons">
+        <button class="exit-btn" id="backFromAutoDriveBtn">Back</button>
+      </div>
+      <div class="top-right-buttons">
+        <button class="exit-btn" id="nextToDriftPageBtn">Next</button>
+      </div>
+
+      <h1 class="settings-title">AutoDrive Settings</h1>
+      <p class="settings-info">
+        Welcome to AutoDrive once you have set a waypoint you can use these. Why drive when you don't have to, times are changing and so are vehicles.
+      </p>
+
+      <div class="button-group-bottom">
+        <button id="startAutopilotBtn" class="green-btn">
+          <span class="btn-icon" id="uploadIcon">⬆️</span> Start AutoDrive
+        </button>
+        <button id="stopAutopilotBtn" class="red-btn">
+          <span class="btn-icon" id="disconnectEncryptedIcon">❌</span> Stop AutoDrive
+        </button>
+        <button id="removeAutoDriveKitBtn" class="yellow-btn">
+          <span class="btn-icon">🛠️</span> Remove AutoDrive Kit
+        </button>
+      </div>
+    </div>
+
+    <!-- Driftmode Settings UI Page -->
+    <div id="driftModePage" class="page" style="display: none;">
+      <div class="top-left-buttons">
+        <button class="exit-btn" id="backFromDriftPageBtn">Back</button>
+      </div>
+      <div class="top-right-buttons">
+        <button class="exit-btn" id="exitFromDriftPageBtn">Exit</button>
+      </div>
+
+      <h1 class="settings-title">Driftmode Settings</h1>
+      <p class="settings-info">
+        Driftmode enables controlled oversteer. Use responsibly on closed roads or race tracks. Illegal use of drift kits may lead to vehicle seizures or legal consequences.
+      </p>
+
+      <div class="button-group-bottom">
+        <button id="toggleDriftModeBtn" class="green-btn">
+          <span class="btn-icon">🌀</span> Enable or Disable drift mode
+        </button>
+        <button id="removeDriftKitBtn" class="red-btn">
+          <span class="btn-icon">🧯</span> Remove drift kit
+        </button>
+      </div>
+    </div>
+
+    <!-- Vehicle Assist Settings UI Page -->
+    <div id="vehicleAssistPage" class="page" style="display: none;">
+      <div class="top-left-buttons">
+        <button class="exit-btn" id="backFromVehicleAssistBtn">Back</button>
+      </div>
+      <div class="top-right-buttons">
+        <button class="exit-btn" id="exitFromVehicleAssistBtn">Exit</button>
+      </div>
+
+      <h1 class="settings-title">Vehicle Assist Settings</h1>
+      <p class="settings-info">
+        Welcome to Vehicle Assist Settings, here you can turn off and on your Vehicle Assists unlocking the full potential of your vehicle. Caution is advised when traveling with no assists and your insurance may not cover you.
+      </p>
+
+      <div class="button-group-bottom" style="gap: 15px; display: flex; justify-content: center;">
+        <button id="tscBtn" class="yellow-btn" style="display: flex; align-items: center; gap: 8px;">
+          <span class="btn-icon">🟢</span> TuneX Traction Control System TSC
+        </button>
+        <button id="espBtn" class="yellow-btn" style="display: flex; align-items: center; gap: 8px;">
+          <span class="btn-icon">🟢</span> TuneX Electronic Stability Program ESP
+        </button>
+        <button id="absBtn" class="yellow-btn" style="display: flex; align-items: center; gap: 8px;">
+          <span class="btn-icon">🟢</span> TuneX Anti-Lock Braking System ABS
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
