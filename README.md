@@ -1,6 +1,10 @@
 # TuneX OBD PlugIN Script
 ![image](https://github.com/user-attachments/assets/2c761db7-1f8f-49de-b51b-193da8816b9e)
-![driftmode](https://github.com/user-attachments/assets/e4158d9e-328d-4fad-b226-8597ecca7e76)
+![R69](https://github.com/user-attachments/assets/28efd336-850f-486a-8ffe-3f60b8c4b8be)
+![decryption](https://github.com/user-attachments/assets/2246cde3-06eb-4bfb-901a-8c932b2abdb7)
+![TSC](https://github.com/user-attachments/assets/a0f19f4d-2d97-4d91-9fdb-6c7b7f2f5f72)
+![autoD](https://github.com/user-attachments/assets/7384335c-5a72-41bb-abba-660eedb520b9)
+![driftmode](https://github.com/user-attachments/assets/44429278-e19e-4b44-ae64-615affcc85b0)
 
 
 
