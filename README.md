@@ -35,7 +35,6 @@
 - TuneX R69 item "tunerlaptop".
 - TuneX OBD item "tunerchip".
 - TuneX Drift Mode item "driftkit".
-- Change plate command "disabled in config" (wip)
 - Compatible QB-Core only.
 - Supports some translations via config file and other files.
 - Uses OXLIB for notifications and progress bars.
