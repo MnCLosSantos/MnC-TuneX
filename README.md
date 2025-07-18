@@ -37,7 +37,7 @@
 - TuneX R69 item "tunerlaptop".
 - TuneX OBD item "tunerchip".
 - TuneX Drift Mode item "driftkit".
-- Compatible QB-Core only.
+- Compatible QB/QBOX-Core only.
 - Supports some translations via config file and other files.
 - Uses OXLIB for notifications and progress bars.
 - Custom nui for the tunerlaptop item.
