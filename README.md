@@ -49,7 +49,7 @@
 
 ## Prerequisites
 - oxmysql.
-- QB-Core.
+- QB-QBOX.
 - OX_LIB for notifications and progress bars.
 - qb-inventory (if using ox-inventory let me know as i want to impliment it but dont use ox so will need a tester).
 
