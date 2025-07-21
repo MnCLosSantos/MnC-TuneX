@@ -11,7 +11,7 @@
 
 
 # Welcome to the TuneX PlugIN software.
-## Here is an interactive tuning system for QB-Core only.
+## Here is an interactive tuning system for QB-QBOX only.
 
 
 
