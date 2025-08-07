@@ -56,12 +56,12 @@
 
 
 ## Installation
-1) install items qb-core/shared/items.lua
+1) install items qb-core/shared/items.lua.
 
-2) add images qb-inventory/html/images
+2) add images qb-inventory/html/images.
 
-3) run sqls
+3) run sqls.
 
-4) ensure Tuner in server.cfg (make sure to rename)
+4) ensure Tuner in server.cfg (make sure to rename).
 
-5) Restart your server
+5) Restart your server.
